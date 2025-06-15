@@ -1,1 +1,157 @@
-ggg
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نيفر لاند</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #2b2b2b;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 70px;
+      text-align: center;
+      margin: 50px 0;
+      color: #ffffff;
+      letter-spacing: 4px;
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: fadeInTop 1s forwards;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background-color: #3a3a3a;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 40px;
+      width: 85%;
+      max-width: 700px;
+      font-size: 22px;
+      line-height: 1.8;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .form-container {
+      text-align: center;
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    input[type="text"] {
+      padding: 15px 25px;
+      font-size: 20px;
+      border-radius: 15px;
+      border: none;
+      margin: 10px;
+      width: 300px;
+    }
+
+    button {
+      padding: 15px 35px;
+      font-size: 20px;
+      border-radius: 15px;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #222;
+    }
+
+    .success-message {
+      color: #00ff00;
+      font-size: 22px;
+      margin-top: 20px;
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 18px;
+      color: #aaa;
+    }
+
+    @keyframes fadeInTop {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInBottom {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>نيفر لاند</h1>
+
+  <div class="cards">
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 1s;">
+      نيفر لاند هي أكثر من مجرد مجتمع، إنها أكاديمية تعزز الانضباط العسكري وتبني الشخصية القوية ذات القيادة الواعية.
+    </div>
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 2s;">
+      نحن نصنع العقول الاستراتيجية، ننمي مهارات التفكير التحليلي والتخطيط العميق للنجاح في كل مواجهة حياتية ومهنية.
+    </div>
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 3s;">
+      في نيفر لاند، كل الأعمار تجد مكانها، فالتنمية الذاتية لا عمر لها، والاحترام ركيزة أساسية في تعاملاتنا.
+    </div>
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 4s;">
+      نغرس فيك المسؤولية والانضباط، لتصبح شخصاً يتحمل قراراته بثقة ويبني مستقبله بخطى ثابتة ومتزنة.
+    </div>
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 5s;">
+      الاحترام، الاحترافية، والأخلاق؛ ثلاث قيم مقدسة تقود كل فرد في نيفر لاند ليحقق التميز في كل مجال.
+    </div>
+  </div>
+
+  <div class="form-container" style="animation: fadeInBottom 1s forwards; animation-delay: 6s;">
+    <input type="text" id="robloxName" placeholder="اكتب اسمك في روبلوكس">
+    <button onclick="activate()">تفعيل</button>
+    <div id="success" class="success-message">تم تفعيلك في موقع نيفر لاند بنجاح!</div>
+  </div>
+
+  <footer style="animation: fadeInBottom 1s forwards; animation-delay: 7s;">
+    جميع الحقوق محفوظة لنيفر لاند © والموقع مطور بالكامل من قبل .884.
+  </footer>
+
+  <script>
+    function activate() {
+      let name = document.getElementById("robloxName").value.trim();
+      if (name !== "") {
+        let msg = document.getElementById("success");
+        msg.style.display = "block";
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 10000);
+      }
+    }
+  </script>
+
+</body>
+</html>
