@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>نيفر لاند</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -14,14 +14,19 @@
     }
 
     h1 {
-      font-family: 'Lobster', cursive;
-      font-size: 70px;
+      font-family: 'Cairo', sans-serif;
+      font-weight: 700;
+      font-size: 80px;
       text-align: center;
-      margin: 50px 0;
-      color: #ffffff;
-      letter-spacing: 4px;
+      margin: 60px 0 50px 0;
+      color: #f0f0f0;
+      letter-spacing: 6px;
+      text-shadow:
+        2px 2px 5px rgba(0,0,0,0.6),
+        0 0 10px #00ffdd,
+        0 0 20px #00ffdd;
       opacity: 0;
-      transform: translateY(-50px);
+      transform: translateY(-60px);
       animation: fadeInTop 1s forwards;
     }
 
@@ -31,6 +36,7 @@
       align-items: center;
       gap: 40px;
       margin-bottom: 60px;
+      padding: 0 10px;
     }
 
     .card {
@@ -38,13 +44,15 @@
       border: 1px solid rgba(255,255,255,0.15);
       border-radius: 20px;
       padding: 40px;
-      width: 85%;
-      max-width: 700px;
+      width: 90%;
+      max-width: 750px;
       font-size: 22px;
       line-height: 1.8;
       box-shadow: 0 0 15px rgba(0,0,0,0.4);
       opacity: 0;
       transform: translateY(50px);
+      font-family: 'Cairo', sans-serif;
+      font-weight: 600;
     }
 
     .form-container {
@@ -52,6 +60,7 @@
       margin-bottom: 60px;
       opacity: 0;
       transform: translateY(50px);
+      font-family: 'Cairo', sans-serif;
     }
 
     input[type="text"] {
@@ -60,7 +69,9 @@
       border-radius: 15px;
       border: none;
       margin: 10px;
-      width: 300px;
+      width: 320px;
+      font-family: 'Cairo', sans-serif;
+      font-weight: 600;
     }
 
     button {
@@ -72,6 +83,8 @@
       color: white;
       cursor: pointer;
       transition: 0.3s;
+      font-family: 'Cairo', sans-serif;
+      font-weight: 700;
     }
 
     button:hover {
@@ -83,6 +96,8 @@
       font-size: 22px;
       margin-top: 20px;
       display: none;
+      font-family: 'Cairo', sans-serif;
+      font-weight: 600;
     }
 
     footer {
@@ -91,8 +106,10 @@
       border-top: 1px solid rgba(255,255,255,0.2);
       font-size: 18px;
       color: #aaa;
+      font-family: 'Cairo', sans-serif;
     }
 
+    /* الانميشن */
     @keyframes fadeInTop {
       to {
         opacity: 1;
@@ -114,37 +131,43 @@
 
   <div class="cards">
     <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 1s;">
-      نيفر لاند هي أكثر من مجرد مجتمع، إنها أكاديمية تعزز الانضباط العسكري وتبني الشخصية القوية ذات القيادة الواعية.
+      نيفر لاند ليست مجرد مؤسسة، بل هي منارة تربوية تنير دروب المتعلمين نحو بناء شخصية عسكرية متزنة، قادرة على مواجهة تحديات العصر بثقة وحكمة.
     </div>
     <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 2s;">
-      نحن نصنع العقول الاستراتيجية، ننمي مهارات التفكير التحليلي والتخطيط العميق للنجاح في كل مواجهة حياتية ومهنية.
+      نعمل على تنمية الحس الاستراتيجي من خلال تعليم مبادئ التخطيط والتحليل الدقيق، لنُعد أفراداً قادرين على اتخاذ قرارات صائبة ومدروسة في جميع مناحي الحياة.
     </div>
     <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 3s;">
-      في نيفر لاند، كل الأعمار تجد مكانها، فالتنمية الذاتية لا عمر لها، والاحترام ركيزة أساسية في تعاملاتنا.
+      المسؤولية هي جوهر فلسفتنا، حيث نؤمن أن تحمّل الأفراد مسؤولياتهم هو أساس التطور والنمو، ونضعها كركيزة في كل نشاط نقوم به.
     </div>
     <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 4s;">
-      نغرس فيك المسؤولية والانضباط، لتصبح شخصاً يتحمل قراراته بثقة ويبني مستقبله بخطى ثابتة ومتزنة.
+      الاحترام المتبادل هو ركيزة ثقافتنا، فنحن نُعلي من شأن القيم الإنسانية ونبني بيئة يسودها التفاهم والاعتراف بكرامة الجميع بغض النظر عن العمر أو الخلفية.
     </div>
     <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 5s;">
-      الاحترام، الاحترافية، والأخلاق؛ ثلاث قيم مقدسة تقود كل فرد في نيفر لاند ليحقق التميز في كل مجال.
+      برامجنا التدريبية مصممة لتناسب جميع الفئات العمرية، مبتدئين أو محترفين، لأننا نؤمن بأن التعلم المستمر هو مفتاح التقدم في كل مرحلة من مراحل الحياة.
+    </div>
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 6s;">
+      نيفر لاند هي ملتقى للروح العسكرية والتنشئة الفكرية، حيث يلتقي الإصرار بالمعرفة لتكوين شخصيات متوازنة قادرة على الإبداع والقيادة.
+    </div>
+    <div class="card" style="animation: fadeInBottom 1s forwards; animation-delay: 7s;">
+      نسعى دوماً لترسيخ القيم الأخلاقية والاحترافية في نفوس أعضاء مجتمعنا، فنحن لا نبحث عن نجاح مؤقت، بل عن صناعة قادة يبنون مجتمعاتهم على أسس متينة.
     </div>
   </div>
 
-  <div class="form-container" style="animation: fadeInBottom 1s forwards; animation-delay: 6s;">
-    <input type="text" id="robloxName" placeholder="اكتب اسمك في روبلوكس">
+  <div class="form-container" style="animation: fadeInBottom 1s forwards; animation-delay: 8s;">
+    <input type="text" id="robloxName" placeholder="اكتب اسمك في روبلوكس" />
     <button onclick="activate()">تفعيل</button>
     <div id="success" class="success-message">تم تفعيلك في موقع نيفر لاند بنجاح!</div>
   </div>
 
-  <footer style="animation: fadeInBottom 1s forwards; animation-delay: 7s;">
+  <footer style="animation: fadeInBottom 1s forwards; animation-delay: 9s;">
     جميع الحقوق محفوظة لنيفر لاند © والموقع مطور بالكامل من قبل .884.
   </footer>
 
   <script>
     function activate() {
-      let name = document.getElementById("robloxName").value.trim();
+      const name = document.getElementById("robloxName").value.trim();
       if (name !== "") {
-        let msg = document.getElementById("success");
+        const msg = document.getElementById("success");
         msg.style.display = "block";
         setTimeout(() => {
           msg.style.display = "none";
